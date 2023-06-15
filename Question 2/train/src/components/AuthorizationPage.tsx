@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { usehistory } from 'react-router-dom';
+
 const BASE_URL = 'http://104.211.219.98/train/auth';
 
 const AuthorizationPage = () => {
@@ -10,7 +12,7 @@ const AuthorizationPage = () => {
   const [clientSecret, setClientSecret] = useState('');
   const [authorizationResponse, setAuthorizationResponse] = useState('');
 
- 
+  const history = useHistory();
 
   const handleAuthorize = async () => {
     const requestBody = {
