@@ -16,7 +16,52 @@ class Trains extends Component {
   }
   render() {
     return (
-      <div className="main-container">
+        <div className="trains">
+            
+            <div className="main-container">
+                <div className="container">
+                <h2 className="heading">MAS HYD Express 12603</h2>
+                    <div className="container">
+
+                        <div className="destination">
+                            <div className="row">
+                                <p className="p1"> Arrival: 16:45</p>
+                                <p className="p2"> Departure: 05:45</p>
+                            </div>
+                        </div>
+                            
+                        <div className="type">
+                            <div className="container-items">
+                                <div className="mini-container">
+                                    <div className="items">
+                                        <p>sleeper</p>
+                                        <p> Tickets Avalilable</p>
+                                    </div>
+                                </div>
+
+                                <div className="mini-container">
+                                    <div className="items">
+                                        <p>
+                                            sleeper
+                                        </p>
+                                        <p> Tickets Avalilable</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="price">
+                            <p>450</p>
+                        </div>
+
+                        </div>
+                    </div>
+
+
+                    
+            </div>
+
+            <div className="main-container">
         <div className="container">
         <h2 className="heading">MAS HYD Express 12603</h2>
             <div className="container">
@@ -54,9 +99,11 @@ class Trains extends Component {
 
                 </div>
             </div>
+
+
+            
+            </div>        
         </div>
-        
-      
 
       
     );
