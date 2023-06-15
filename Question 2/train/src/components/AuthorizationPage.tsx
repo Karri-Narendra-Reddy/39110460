@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { usehistory } from 'react-router-dom';
+
 
 const BASE_URL = 'http://104.211.219.98/train/auth';
 
@@ -12,7 +12,7 @@ const AuthorizationPage = () => {
   const [clientSecret, setClientSecret] = useState('');
   const [authorizationResponse, setAuthorizationResponse] = useState('');
 
-  const history = useHistory();
+  
 
   const handleAuthorize = async () => {
     const requestBody = {
@@ -37,9 +37,7 @@ const AuthorizationPage = () => {
       setAuthorizationResponse(JSON.stringify(data, null, 2));
 
       // Redirect to the home page after successful authorization
-      if (response.ok) {
-        history.push('/');
-      }
+      
     } catch (error) {
       console.log(error);
       setAuthorizationResponse('Error occurred while authorizing the company.');
