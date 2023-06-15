@@ -16,37 +16,49 @@ class Trains extends Component {
   }
   render() {
     return (
-      <div>
-        <h1>Trains</h1>
-        <table>
-          <thead>
-            <tr>
-              <th>Train Number</th>
-              <th>Train Name</th>
-              <th>Departure Station</th>
-              <th>Arrival Station</th>
-              <th>Departure Time</th>
-              <th>Arrival Time</th>
-              <th>Seat Availability</th>
-              <th>Price</th>
-            </tr>
-          </thead>
-          <tbody>
+      <div className="main-container">
+        <div className="container">
+        <h2 className="heading">MAS HYD Express 12603</h2>
+            <div className="container">
+
+                <div className="destination">
+                    <div className="row">
+                        <p className="p1"> Arrival: 16:45</p>
+                        <p className="p2"> Departure: 05:45</p>
+                    </div>
+                </div>
+                    
+                <div className="type">
+                    <div className="container-items">
+                        <div className="mini-container">
+                            <div className="items">
+                                <p>sleeper</p>
+                                <p> Tickets Avalilable</p>
+                            </div>
+                        </div>
+
+                        <div className="mini-container">
+                            <div className="items">
+                                <p>
+                                    sleeper
+                                </p>
+                                <p> Tickets Avalilable</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="price">
+                    <p>450</p>
+                </div>
+
+                </div>
+            </div>
+        </div>
         
-              <tr>
-                <td>17643</td>
-                <td>circar</td>
-                <td>coa</td>
-                <td>cgl</td>
-                <td>4:55 pm</td>
-                <td>4:55 pm</td>
-                <td>#450</td>
-                <td>500</td>
-              </tr>
-            
-          </tbody>
-        </table>
-      </div>
+      
+
+      
     );
   }
 }

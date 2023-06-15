@@ -4,7 +4,7 @@ import HomePage from './components/HomePage';
 import RegistrationPage from './components/RegistrationPage';
 import AuthorizationPage from './components/AuthorizationPage';
 import Trains from './components/FirstPage/FirstPage';
-
+import './App.css';
 const App = () => {
   return (
     <div>
